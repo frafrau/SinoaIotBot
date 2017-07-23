@@ -3,7 +3,7 @@ from time import sleep
 from datetime import datetime
 
 ser = serial.Serial('/dev/ttyACM0',9600)
-#ser.write("*".encode())
+ser.write("*".encode())
 
 #while True
 ard = (b"3")
@@ -21,5 +21,3 @@ print("温度:",temp,'C')
 print("湿度:",hum,'%')
 print("state:",state)
 print('\n')
-
-sleep(1)
